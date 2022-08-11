@@ -14,6 +14,7 @@ typedef unsigned long long ull;
 using namespace std;
 
 const int threadsPerBlock = 64;
+// this way only works when the dets_num is less and equal to 1024*64
 const int dets_num = 1024*64;
 const int col_blocks = ceil_div(dets_num, threadsPerBlock);
 
